@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <body>
+            <script>
+               // Working with prompt
+    //  let city = prompt('Where do you live?', "India" );
+    //  let town = 'Congratulations you live in india!';
+
+    //  alert(town);
+
+   // Working with confirm
+  // let transactionStatus = confirm('Do you accept the charges of N1,000?');
+ // alert(transactionStatus);
+
+
+        // Working with concatenation
+       //alert(2 + "1");
+
+     //   alert('1' + 2 + 2);
+
+   //  alert('6' / '3');
+
+
+   //alert(+'');
+
+ // converting strings to numbers
+   //let apples = "8";
+  // let oranges = "10";
+
+   //alert( +apples + +oranges);
+
+//Working with Increment Operator
+  // counter = 4;
+  //  counter ++;
+//    alert(counter);
+
+//Working with Decrement Operator
+  //count= 45
+ //-- count;
+ //count --;
+   //alert(count);
+
+   // working with postfix and prefix Increment and decrement operators
+  // let count= 40;
+   //let newCount= count++;
+   //alert(count);
+
+
+   //Increment operator alongside another expression
+    // let counter= 5;
+     //alert( 2 * counter++);
+
+
+     // Working with comma 
+     //let a = (1 + 2, 3 + 4);
+     //alert( a ); // 7 (the result of 3 + 4)
+
+     // Working with the If statement
+  //let year =prompt('When was i born?');
+ // if (year == 2000) {
+  //  alert('you are correct!');
+//  }
+
+//Working with the else clause
+// let year = prompt('When was I born?');
+ //if(year==2000) {
+   //alert('You are correct!');
+ //}
+ //else{
+  //alert('You are horribly wrong!  ');
+ //}
+
+ //working with else if clause
+ //let size = prompt('What size are you?');
+ //if(size==11) {
+  //alert('You are size 11!');
+ //}
+ //else if(size > 11){
+  //alert('Too Big cuzzo');
+ //}
+ //else{
+  //alert('You are horribly wrong!');
+ //}
+
+//Working with conditional operator
+
+// let accessAllowed;
+//let age = prompt('How old are you?', '');
+//if (age > 18) {
+ // accessAllowed = true;
+//} else {
+  //accessAllowed = false;
+//}
+//alert(accessAllowed);
+
+//Working with multiple ? Works same as else if
+//let age = prompt('age?', 18);
+
+//let message = (age < 3) ? 'Hi, baby!' :
+  //(age < 18) ? 'Hello!' :
+  //(age < 100) ? 'Greetings!' :
+  //'What an unusual age!';
+
+//alert( message );
+
+
+
+// Workiing with the Non-traditional ? using it instead of ifandelse
+//let company = prompt('Which company created JavaScript?', '');
+
+//(company == 'Netscape') ?
+  // alert('Right!') : alert('Wrong.');
+ 
+// Working with the OR || operator
+ // let hours = prompt('How long are you open for?') ;
+  //if (hours > 5 || hours < 5) {
+   //  alert('Sorry we are closed!');
+// }
+
+
+//alert( 1 || 0 ); // 1 (1 is truthy)
+
+//alert( null || 1 ); // 1 (1 is the first truthy value)
+//alert( null || 0 || 1 ); // 1 (the first truthy value)
+
+//alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+
+// OR will only alert the first truthy element
+//let firstName = "";
+//let lastName = "";
+//let nickName = "SuperCoder";
+//alert( firstName || lastName || nickName);
+
+// OR short Circuit Evaluation
+//true || alert("not printed");
+//false || alert("printed");
+
+
+//Working with AND 
+//let hours= 5;
+//let mins= 30;
+//if (hours==5 && mins==30) {
+ // alert('The time is 5:30pm');
+//}
+
+// if the first operand is truthy,
+// AND returns the second operand:
+//alert( 1 && 0 ); // 0
+//alert( 1 && 5 ); // 5
+
+// if the first operand is falsy,
+// AND returns it. The second operand is ignored
+//alert( null && 5 ); // null
+//alert( 0 && "no matter what" ); 
+
+//if condition to check for age between 14-90
+//if (age >= 14 && age <=90);
+
+//The first variant to check that age is not between 14-90
+//if (!(age >= 14 && age <= 90));
+
+//The second variant to check that age is not between 14-90
+//if (age < 14 || age > 90);
+
+//Logiin Logic
+//let userName = prompt("Who's there?", '');
+
+//if(userName==='Admin'){
+ // let password = prompt('Kindly Input Password', '');
+
+//if(password==='TheMaster'){
+ // alert('Welcome Back Oluwapelumi');
+//}
+//else if(password==='' || password=== null){
+  //alert('Cancled');
+//}
+//else{
+ // alert("Wrong password");
+//}
+//}
+//else if (userName==='' || userName=== null){
+//alert('canceled');
+//}
+//else{
+ // alert("I don't Know you");
+//}
+
+
+
+
+
+//working with nullish coallator to display the first defined value
+//let firstName = null;
+//let lastName = null;
+//let nickName = "Supercoder";
+
+// shows the first defined value:
+//alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+
+//working with parentheses 
+//let height = null;
+//let width = null;
+
+// important: use parentheses
+//let area = (height ?? 100) * (width ?? 50);
+
+//alert(area); // 5000
+
+
+// without parentheses
+//let area = height ?? 100 * width ?? 50;
+
+// ...works this way (not what we want):
+//let area = height ?? (100 * width) ?? 50;
+
+// set height=100, if height is null or undefined
+//height= null;
+//height = height ?? 100;
+//alert(height);
+
+
+//working with while loop
+//let x =0;
+//while (x<3) {
+  //alert(x);
+  //x++;
+//}
+
+//let i =5;
+//while(i){
+ // alert(i); /// when i becomes 0, the condition becomes falsy, and the loop stops
+  //i--;
+//}
+
+//working with do while loop
+//let i = 0;
+//do {
+  //alert( i );
+  //i++;
+//} 
+//while (i < 3);
+
+
+
+// Working with For loop 
+// for (let i = 0; i < 3; i++) alert(i)
+// run begin
+//let i = 0
+// if condition → run body and run step
+//if (i < 3) { alert(i); i++ }
+// if condition → run body and run step
+//if (i < 3) { alert(i); i++ }
+// if condition → run body and run step
+//if (i < 3) { alert(i); i++ }
+// ...finish, because now i == 3
+
+//Inline variable declaration
+//for (let i = 0; i < 3; i++) {
+  //alert(i); // 0, 1, 2
+//}
+//alert(i); // error, no such variable because such variable is only visible inside the loop
+
+
+// declared variable outside the loop
+//let i = 0;
+
+//for (i = 0; i < 3; i++) { // use an existing variable
+ // alert(i); // 0, 1, 2
+//}
+
+//alert(i); // 3, visible, because declared outside of the loop
+
+
+//Breaking the loop
+//let sum = 0;
+
+//while (true) {
+
+  //let value = +prompt("Enter a number", '');
+
+  //if (!value) break; // (stops the loop*)
+
+  //sum += value;
+
+//}
+//alert( 'Sum: ' + sum );
+
+
+//continue to the next iteration
+
+//for (let i = 0; i < 10; i++) {
+
+// if true, skip the remaining part of the body
+//if (i % 2 == 0) continue;
+
+//alert(i); // 1, then 3, 5, 7, 9
+//}
+
+
+
+
+
+
+//code to get even numbers from 2 to 10
+//for (let i=2; i <= 10; i++) {
+  //if( i % 2==0) {
+    //alert(i);
+  //}
+//}
+
+
+
+
+// working with the switch statement 
+//let a = 2 + 2;
+
+//switch (a) {
+  //case 3:
+    //alert( 'Too small' );
+    //break;
+  //case 4:
+    //alert( 'Exactly!' ); // case 4 is executed
+    //break;
+  //case 5:
+    //alert( 'Too big' );
+    //break;
+  //default:
+    //alert( "I don't know such values" );
+//}
+
+
+
+
+
+//grouping two cases for same code to run
+//let a = 3;
+
+//switch (a) {
+ // case 4:
+   // alert('Right!');
+    //break;
+
+  //case 3: // (*) grouped two cases
+  //case 5:
+    //alert('Wrong!');
+    //alert("Why don't you take a math class?");
+    //break;
+
+  //default:
+    //alert('The result is strange. Really.');
+//}
+
+
+// Working with switch statement USES STRICT EQUALITY
+//let arg = prompt("Enter a value?");
+//switch (arg) {
+  //case '0':
+  //case '1':
+    //alert( 'One or zero' );
+    //break;
+
+  //case '2':
+   // alert( 'Two' );
+   // break;
+
+  //case 3:
+   // alert( 'Never executes!' );
+    //break;
+  //default:
+   // alert( 'An unknown value' );
+//}
+
+
+//declaring a function showMessage
+//function showMessage() {
+  //alert( 'Hello everyone!' );
+//}
+
+//showMessage();
+//showMessage();
+
+
+//declaring a local variable outside of the function
+//function showMessage() {
+  //let message = "Hello, I'm JavaScript!"; // local variable
+
+  //alert( message );
+//}
+
+//showMessage(); // Hello, I'm JavaScript!
+
+//alert( message ); // <-- Error! The variable is local to the function
+
+
+// function working with an Outer variable
+//let userName = 'John';
+
+//function showMessage() {
+  //let message = 'Hello, ' + userName;
+  //alert(message);
+//}
+
+//showMessage(); // Hello, John
+
+
+// changing the value of the outer variable with a function
+//let userName = 'John';
+
+//function showMessage() {
+  //userName = "Bob"; // (1) changed the outer variable
+
+  //let message = 'Hello, ' + userName;
+  //alert(message);
+//}
+
+//alert( userName ); // John before the function call
+
+//showMessage();
+
+//alert( userName);  // Bob, the value was modified by the function
+
+
+
+
+//working with outer variable & local variable
+//let userName = 'John';
+
+//function showMessage() {
+  //let userName = "Bob"; // declare a local variable
+
+  //let message = 'Hello, ' + userName; // Bob
+  //alert(message);
+//}
+
+// the function will create and use its own userName
+//showMessage();
+
+//alert( userName ); //John, unchanged, the function did not access the outer variable
+
+
+//working with functions and parameters
+//function showMessage(from, text) { // parameters: from, text
+  //alert(from + ': ' + text);
+//}
+
+//showMessage('Bitch', 'buggy'); // Ann: Hello! (*)
+//showMessage('Ann', "What's up?"); // Ann: What's up? (**)
+
+
+// declaring functions when one parameter isn't given
+//function showMessage(from, text = "no text given") {
+  //alert( from + ": " + text );
+//}
+
+//showMessage("Ann"); // Ann: no text given
+
+
+// can be used if text is not definded
+//function showMessage(from, text = anotherFunction()) {
+  // anotherFunction() only executed if no text given
+  // its result becomes the value of text
+//}
+
+
+// simple function to sum two numbers 
+//function sum(a, b) {
+  //return a + b;
+//}
+
+//let result = sum(1, 2);
+//alert( result ); // 3
+
+ 
+
+
+
+
+// a simple logic to check age using return
+//function checkAge(age) {
+  //if (age >= 18) {
+    //return true;
+  //} else {
+  //  return confirm('Do you have permission from your parents?');
+  //}
+//}
+
+//let age = prompt('How old are you?', 18);
+
+//if ( checkAge(age) ) {
+  //alert( 'Access granted' );
+//} else {
+  //alert( 'Access denied' );
+//}
+
+
+//using ternary operator to return value
+//function checkAge(age) {
+ // return (age > 18) ? true : confirm('Did parents allow you?');
+//}
+
+
+//using or to return value
+//function checkAge(age) {
+  //return (age > 18) || confirm('Did parents allow you?');
+//}
+
+
+//Expressing function as a value
+//function sayHi() {   // (1) create
+ // alert( "Hello" );
+//}
+
+//let func = sayHi;    // (2) copy
+
+//func(); // Hello     // (3) run the copy (it works)!
+//sayHi(); // Hello    //     this still works too (why wouldn't it)
+
+
+//Expressing a function as a value using function expression
+//let sayHi = function() { // (1) create
+  //alert( "Hello" );
+//};
+
+//let func = sayHi;
+
+
+//using call back functions
+//function ask(question, yes, no) {
+  //if (confirm(question)) yes()
+  //else no();
+//}
+
+//function showOk() {
+  //alert( "You agreed." );
+//}
+
+//function showCancel() {
+  //alert( "You canceled the execution." );
+//}
+
+// usage: functions showOk, showCancel are passed as arguments to ask
+//ask("Do you agree?", showOk, showCancel);
+
+
+//Using function expression to assign a function to a variable to make it visible outside thefunction
+//let age = prompt("What is your age?", 18);
+
+//let welcome;
+
+//if (age < 18) {
+
+  //welcome = function() {
+    //alert("Hello!");
+  //};
+
+//} else {
+
+  //welcome = function() {
+    //alert("Greetings!");
+  //};
+
+//}
+
+//welcome(); // ok now
+
+//simpler way  using the ternary operator
+//let age = prompt("What is your age?", 18);
+
+//let welcome = (age < 18) ?
+  //function() { alert("Hello!"); } :
+  //function() { alert("Greetings!"); };
+
+//welcome(); // ok now
+
+
+//Example of using arrow functions
+//let sum = (a, b) => a + b;
+
+/* This arrow function is a shorter form of:
+
+let sum = function(a, b) {
+  return a + b;
+};
+*/
+
+//alert( sum(1, 2) ); // 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </script>
+        </body>
+    </head>
+</html>
